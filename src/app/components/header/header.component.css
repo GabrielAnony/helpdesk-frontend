@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 1.5rem auto 0px auto;
+  border-radius: 2rem;
+  padding: 0.6rem 10%;
+  background-color: #fff;
+  font-weight: bolder;
+  color: rgb(78, 78, 78);
+  letter-spacing: 2px;
+}
