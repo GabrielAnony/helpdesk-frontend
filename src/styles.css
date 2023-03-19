@@ -3,6 +3,7 @@
 @include mat-core();
 
 $custom-app-primary: mat-pallete($025E73) */
+@import "../node_modules/ngx-toastr/toastr.css";
 
 html,
 body {
