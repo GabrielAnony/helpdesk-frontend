@@ -8,8 +8,9 @@ h1 {
   margin: 1.5rem auto 0px auto;
   border-radius: 2rem;
   padding: 0.6rem 10%;
-  background-color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(320deg, #026873 0%, rgba(3, 166, 136, 1) 40%);
   font-weight: bolder;
-  color: rgb(78, 78, 78);
+  color: rgb(255, 255, 255);
   letter-spacing: 2px;
 }
