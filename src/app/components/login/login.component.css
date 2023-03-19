@@ -1,0 +1,40 @@
+.container {
+  height: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, #026873 0%, rgba(3, 166, 136, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 30rem;
+  margin: auto;
+  background-color: #f5f5fa;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(63, 63, 63);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.b-login {
+  background-color: #026873;
+  margin-top: 1.5rem;
+  float: right;
+  padding: 0.2rem 2rem;
+}
+
+img {
+  height: 15rem;
+  width: 90%;
+  margin: 1.5rem auto 1.5rem auto;
+}
