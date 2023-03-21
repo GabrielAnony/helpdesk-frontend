@@ -9,12 +9,12 @@
       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. name" #input>
     </mat-form-field>
 
-    <button class="b-add" mat-fab color="primary" aria-label="Example icon button with a delete icon" title="Adicionar Novo Técnico">
+    <button routerLink="create" class="b-add" mat-fab color="primary" aria-label="Example icon button with a delete icon" title="Adicionar Novo Técnico">
       <mat-icon>add</mat-icon>
     </button>
 
 
-    <div class="mat-elevation-z8 table-edit">
+    <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource">
 
         <ng-container matColumnDef="id">

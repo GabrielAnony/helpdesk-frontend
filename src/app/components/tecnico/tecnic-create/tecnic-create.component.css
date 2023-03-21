@@ -1,0 +1,70 @@
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.pnlForm {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(109, 109, 109);
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+  border-bottom-color: rgb(168, 168, 168);
+  border-bottom-width: 3px;
+}
+
+.mat-card {
+  padding-bottom: 45px;
+}
+
+.section {
+  display: flex;
+  justify-content: left;
+}
+
+.section p {
+  margin-right: 50px;
+}
+
+img {
+  height: 25rem;
+  margin: auto;
+  padding: 0px 0px 0px 50px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 40;
+}
+
+.fullField {
+  width: 100%;
+}
+
+.b-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top-style: dotted;
+  border-top-color: rgb(168, 168, 168);
+  border-top-width: 3px;
+  padding-top: 25px;
+}
+
+.b-form button {
+  margin-left: 2rem;
+}
+.b-add {
+  background: var(--bg-gradient);
+}
+
+.b-can {
+  color: coral;
+}

@@ -1,9 +1,27 @@
 .card {
   width: 90%;
   margin: 1rem auto;
+  padding: 30px;
   background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
 }
 
 img {
   height: 20rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+  border-bottom-color: rgb(168, 168, 168);
+  border-bottom-width: 3px;
+}
+
+i {
+  font-size: 30px;
+  margin-right: 5px;
 }

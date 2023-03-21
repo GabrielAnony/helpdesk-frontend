@@ -9,8 +9,17 @@ h1 {
   border-radius: 2rem;
   padding: 0.6rem 10%;
   background: rgb(2, 0, 36);
-  background: linear-gradient(320deg, #026873 0%, rgba(3, 166, 136, 1) 40%);
+  background: linear-gradient(
+    300deg,
+    var(--main-one-color) 0%,
+    var(--main-two-color) 100%
+  );
   font-weight: bolder;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
