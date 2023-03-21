@@ -3,6 +3,11 @@
   margin: auto;
 }
 
+.container .mat-card {
+  border-radius: 3rem;
+  padding: 30px 30px 50px 30px;
+}
+
 .pnlForm {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -18,10 +23,6 @@ h1 {
   border-bottom-style: dotted;
   border-bottom-color: rgb(168, 168, 168);
   border-bottom-width: 3px;
-}
-
-.mat-card {
-  padding-bottom: 45px;
 }
 
 .section {
