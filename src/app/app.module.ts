@@ -25,6 +25,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
+import { MatDialogModule } from "@angular/material/dialog";
 
 import { NavComponent } from "./components/nav/nav.component";
 import { HomeComponent } from "./components/home/home.component";
@@ -36,6 +37,8 @@ import { ToastrModule } from "ngx-toastr";
 import { AuthInterceptorProvider } from "./interceptors/auth.interceptor";
 import { TecnicCreateComponent } from "./components/tecnico/tecnic-create/tecnic-create.component";
 import { NgxMaskModule } from "ngx-mask";
+import { TecnicoUpdateComponent } from "./components/tecnico/tecnico-update/tecnico-update.component";
+import { TecnicoDeleteComponent } from "./components/tecnico/tecnico-delete/tecnico-delete.component";
 
 @NgModule({
   declarations: [
@@ -46,6 +49,8 @@ import { NgxMaskModule } from "ngx-mask";
     TecnicoListComponent,
     LoginComponent,
     TecnicCreateComponent,
+    TecnicoUpdateComponent,
+    TecnicoDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,6 +82,7 @@ import { NgxMaskModule } from "ngx-mask";
       closeButton: true,
     }),
     NgxMaskModule.forRoot(),
+    MatDialogModule,
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent],

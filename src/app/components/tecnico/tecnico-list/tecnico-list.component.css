@@ -39,6 +39,16 @@ h1 {
   border-bottom-width: 3px;
 }
 
-button {
-  background-color: var(--bg-gradien);
+.b-edit {
+  color: var(--main-one-color);
+  margin: 5px;
+}
+
+.b-del {
+  color: coral;
+  margin: 5px;
+}
+
+a > i {
+  cursor: pointer;
 }

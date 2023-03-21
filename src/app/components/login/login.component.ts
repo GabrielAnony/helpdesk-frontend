@@ -11,6 +11,8 @@ import { AuthService } from "src/app/services/auth.service";
   styleUrls: ["./login.component.css"],
 })
 export class LoginComponent implements OnInit {
+  hide = true;
+
   creds: Credenciais = {
     email: "",
     senha: "",
@@ -33,7 +35,10 @@ export class LoginComponent implements OnInit {
         this.service.successfulLogin(
           resposta.headers.get("Authorization").substring(7)
         );
-        this.router.navigate([""]);
+        this.toast.success("Login Realizado com sucesso", "Login");
+        setTimeout(() => {
+          this.router.navigate(["/home"]);
+        }, 3000);
       },
       () => {
         this.toast.error("Usuário e/ou senha inválidos");
