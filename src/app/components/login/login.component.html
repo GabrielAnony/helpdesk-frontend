@@ -5,20 +5,20 @@
 
     <img src="assets/img/login-image.svg" alt="imagem de login">
 
-    <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Email</mat-label>
+    <mat-form-field appearance="outline" class="full-width white">
+      <mat-label class="white">Email</mat-label>
       <input [formControl]="email" required [(ngModel)]="creds.email" name="email" matInput placeholder="Ex. example@mail.com">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Senha</mat-label>
+    <mat-form-field appearance="outline" class="full-width white">
+      <mat-label class="white">Senha</mat-label>
       <input [formControl]="senha" required [(ngModel)]="creds.senha" name="senha" matInput [type]="hide ? 'password' : 'text'">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <mat-icon class="icon-visi">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
     </mat-form-field>
 
-    <button (click)="logar()" [disabled]="!validaCampos()" class="b-login" mat-raised-button color="primary">Login</button>
+    <button (click)="logar()" [disabled]="!validaCampos()" class="b-login full-width" mat-raised-button color="primary">Login</button>
 
   </form>
 
