@@ -1,6 +1,5 @@
 .container {
   height: 100%;
-  background: rgb(2, 0, 36);
   background: url("../../../assets/img/loginwallp.jpg") no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,10 +12,11 @@
   width: 30rem;
   margin: auto;
   background: transparent;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   border-radius: 1rem;
   border: 3px solid #ffffff60;
   backdrop-filter: blur(15px);
+  background-color: #6a00e41e;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
   text-align: center;
   font-weight: 700;
   color: rgb(255, 255, 255);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 30px rgb(255, 255, 255);
 }
 
@@ -34,7 +34,7 @@ h1 {
 
 .b-login {
   background-color: #fff;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   padding: 0.2rem 2rem;
   color: black;
   border-radius: 3rem;
@@ -59,21 +59,9 @@ input::placeholder {
   align-items: center;
 }
 
-.mat-form-field-appearance-outline .mat-form-field-outline {
-  color: rgb(255, 255, 255) !important;
-}
-
 .white {
   color: #fff;
-  font-size: 1.3rem;
-}
-
-.mat-input-element {
-  caret-color: #ffffff;
-}
-
-.mat-form-field-outline-gap {
-  color: #fff;
+  font-size: 1.2rem;
 }
 
 ::ng-deep .mat-step-header .mat-step-icon-selected,

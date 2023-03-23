@@ -15,6 +15,7 @@ import { MatDialog } from "@angular/material/dialog";
 })
 export class ClienteListComponent implements OnInit {
   [x: string]: any;
+
   ELEMENT_DATA: Cliente[] = [];
 
   displayedColumns: string[] = ["id", "nome", "cpf", "email", "acoes"];
@@ -25,7 +26,6 @@ export class ClienteListComponent implements OnInit {
   constructor(
     private service: ClienteService,
     private toastr: ToastrService,
-    private router: Router,
     public dialog: MatDialog
   ) {}
 

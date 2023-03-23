@@ -1,0 +1,68 @@
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.container .mat-card {
+  border-radius: 3rem;
+  padding: 30px 30px 50px 30px;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 30%;
+}
+
+.b-add {
+  float: right;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background: var(--bg-gradient);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(109, 109, 109);
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+  border-bottom-color: rgb(168, 168, 168);
+  border-bottom-width: 3px;
+}
+
+.b-edit {
+  color: var(--main-one-color);
+  margin: 5px;
+}
+
+.b-del {
+  color: coral;
+  margin: 5px;
+}
+
+a > i {
+  cursor: pointer;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one-radio {
+  margin-right: 20px;
+}
+
+.one-radio mat-radio-button {
+  margin-right: 30px;
+  padding-top: 10px;
+}
