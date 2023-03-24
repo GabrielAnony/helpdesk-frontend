@@ -1,3 +1,3 @@
 export const API_CONFIG = {
-  baseUrl: "http://localhost:8088",
+  baseUrl: "https://helpdesk-backend-production-d4b9.up.railway.app",
 };
