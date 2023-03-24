@@ -5,7 +5,7 @@
 
 .container .mat-card {
   border-radius: 3rem;
-  padding: 30px 30px 50px 30px;
+  padding: 10px 30px 15px 30px;
 }
 
 .pnlForm {
@@ -16,13 +16,19 @@
 h1 {
   text-align: center;
   font-weight: 700;
+  margin-bottom: 15px;
   color: rgb(109, 109, 109);
   letter-spacing: 2px;
-  font-size: 2rem;
-  padding-bottom: 10px;
+  font-size: 1.5rem;
+  padding-bottom: 0px;
   border-bottom-style: dotted;
   border-bottom-color: rgb(168, 168, 168);
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
+}
+
+mat-form-field {
+  font-size: 0.8rem;
+  padding: 0px;
 }
 
 .section {
@@ -35,13 +41,9 @@ h1 {
 }
 
 img {
-  height: 25rem;
+  height: 15rem;
   margin: auto;
   padding: 0px 0px 0px 50px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 40;
 }
 
 .fullField {
@@ -55,8 +57,8 @@ img {
 
   border-top-style: dotted;
   border-top-color: rgb(168, 168, 168);
-  border-top-width: 3px;
-  padding-top: 25px;
+  border-top-width: 2px;
+  padding-top: 10px;
 }
 
 .b-form button {
@@ -112,4 +114,8 @@ img {
 
 ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
   color: rgb(0, 0, 0) !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: var(--main-one-color);
 }
