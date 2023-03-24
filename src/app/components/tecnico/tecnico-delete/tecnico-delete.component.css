@@ -20,3 +20,11 @@
   margin: 0px 10px 10px 0px;
   float: right;
 } */
+
+::ng-deep .cdk-overlay-dark-backdrop {
+  backdrop-filter: blur(2px) !important;
+}
+
+::ng-deep .mat-dialog-container {
+  border-radius: 1.5rem;
+}

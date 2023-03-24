@@ -1,0 +1,58 @@
+<h2 mat-dialog-title>Detalhes Chamado</h2>
+<mat-dialog-content>
+  <img class="full-width" src="assets/img/chamado-create.svg" alt="Chamado image">
+  <form class="form">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Título do chamado</mat-label>
+      <input [disabled]="true" [(ngModel)]="data.titulo" name="titulo" matInput placeholder="Ex. Trocar bateria de notebook">
+    </mat-form-field>
+  </form>
+
+  <div class="status-prioridade">
+    <mat-form-field appearance="outline">
+      <mat-label>STATUS ({{ retornaStatus(data.status) }})</mat-label>
+      <mat-select [disabled]="true" [(ngModel)]="data.status" name="status">
+        <mat-option value="0">ABERTO</mat-option>
+        <mat-option value="1">EM ANDAMENTO</mat-option>
+        <mat-option value="2">ENCERRADO</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>PRIORIDADE ({{ retornaPrioridade(data.prioridade) }})</mat-label>
+      <mat-select [disabled]="true" [(ngModel)]="data.prioridade" name="prioridade">
+        <mat-option value="0">BAIXA</mat-option>
+        <mat-option value="1">MÉDIA</mat-option>
+        <mat-option value="2">ALTA</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="tecnico">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>TÉCNICO ({{ data.nomeTecnico }})</mat-label>
+      <mat-select [disabled]="true" [(ngModel)]="data.tecnico" name="tecnico">
+        <mat-option>{{ data.nomeTecnico }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="cliente">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>CLIENTE ({{ data.nomeCliente }})</mat-label>
+      <mat-select [disabled]="true" [(ngModel)]="data.cliente" name="cliente">
+        <mat-option>{{ data.nomeCliente }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <form class="form">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Observação</mat-label>
+      <textarea [disabled]="true" [(ngModel)]="data.observacoes" name="observacoes" class="observacoes" matInput></textarea>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="buttonCan" mat-button [mat-dialog-close]="false">Voltar</button>
+</mat-dialog-actions>

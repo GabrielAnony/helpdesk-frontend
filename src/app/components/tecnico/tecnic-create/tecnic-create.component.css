@@ -113,3 +113,7 @@ img {
 ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
   color: rgb(0, 0, 0) !important;
 }
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: var(--main-one-color);
+}

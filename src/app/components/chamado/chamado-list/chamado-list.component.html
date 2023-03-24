@@ -63,8 +63,8 @@
           <th style="text-align: center;" mat-header-cell *matHeaderCellDef> Ações </th>
 
           <td style="text-align: center;" mat-cell *matCellDef="let element"> {{element.symbol}}
-            <a title="Atualizar Chamado" routerLink=""> <i class="material-icons b-edit">edit</i> </a>
-            <a title="Detalhar Chamado" routerLink=""> <i class="material-icons">visibility</i> </a>
+            <a title="Atualizar Chamado" routerLink="update/{{element.id}}"> <i class="material-icons b-edit">edit</i> </a>
+            <a title="Detalhar Chamado" (click)="openDialog(element)"> <i class="material-icons">visibility</i> </a>
           </td>
         </ng-container>
 

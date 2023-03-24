@@ -66,3 +66,11 @@ a > i {
   margin-right: 30px;
   padding-top: 10px;
 }
+
+::ng-deep .mat-form-field {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.125;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+}

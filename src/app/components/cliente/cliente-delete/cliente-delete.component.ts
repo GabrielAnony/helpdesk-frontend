@@ -1,4 +1,4 @@
-import { Cliente } from "../../../models/cliente";
+import { Cliente } from "src/app/models/cliente";
 import { Component, Inject, OnInit } from "@angular/core";
 import { MAT_DIALOG_DATA } from "@angular/material/dialog";
 
