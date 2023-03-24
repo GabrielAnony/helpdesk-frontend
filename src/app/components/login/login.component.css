@@ -9,7 +9,7 @@
 }
 
 .form {
-  width: 30rem;
+  width: 20rem;
   margin: auto;
   background: transparent;
   padding: 1.5rem 1rem;
@@ -26,6 +26,7 @@ h1 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
   text-shadow: 2px 2px 30px rgb(255, 255, 255);
+  margin: 0;
 }
 
 .full-width {
@@ -60,12 +61,12 @@ input::placeholder {
 }
 
 .email {
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 .white {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 ::ng-deep .mat-step-header .mat-step-icon-selected,
