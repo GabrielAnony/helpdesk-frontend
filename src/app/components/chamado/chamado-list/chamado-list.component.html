@@ -10,10 +10,10 @@
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. titulo" #input>
       </mat-form-field>
 
-      <mat-radio-group [(ngModel)]="labelPosition" color="primary" class="one-radio">
-        <mat-radio-button class=" example-margin" value="after">Aberto</mat-radio-button>
-        <mat-radio-button class="example-margin" value="before">Andamento</mat-radio-button>
-        <mat-radio-button class="example-margin" value="before">Encerrado</mat-radio-button>
+      <mat-radio-group color="primary" class="one-radio">
+        <mat-radio-button (click)="orderByStatus(0)" class=" example-margin" value="0">Aberto</mat-radio-button>
+        <mat-radio-button (click)="orderByStatus(1)" class="example-margin" value="1">Andamento</mat-radio-button>
+        <mat-radio-button (click)="orderByStatus(2)" class="example-margin" value="2">Encerrado</mat-radio-button>
       </mat-radio-group>
 
       <button routerLink="create" class="b-add" mat-fab color="primary" aria-label="Example icon button with a delete icon" title="Adicionar Novo Cliente">
@@ -41,12 +41,12 @@
 
         <ng-container matColumnDef="prioridade">
           <th mat-header-cell *matHeaderCellDef> Prioridade </th>
-          <td mat-cell *matCellDef="let element"> {{element.prioridade}} </td>
+          <td mat-cell *matCellDef="let element"> {{retornaPrioridade(element.prioridade)}} </td>
         </ng-container>
 
         <ng-container matColumnDef="status">
           <th mat-header-cell *matHeaderCellDef> Status </th>
-          <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          <td mat-cell *matCellDef="let element"> {{retornaStatus(element.status)}} </td>
         </ng-container>
 
         <ng-container matColumnDef="cliente">
