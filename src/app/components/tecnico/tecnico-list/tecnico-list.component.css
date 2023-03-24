@@ -5,7 +5,7 @@
 
 .container .mat-card {
   border-radius: 3rem;
-  padding: 30px 30px 50px 30px;
+  padding: 10px 30px 25px 30px;
 }
 
 table {
@@ -32,11 +32,11 @@ h1 {
   font-weight: 700;
   color: rgb(109, 109, 109);
   letter-spacing: 2px;
-  font-size: 2rem;
-  padding-bottom: 10px;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
   border-bottom-style: dotted;
   border-bottom-color: rgb(168, 168, 168);
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
 }
 
 .b-edit {

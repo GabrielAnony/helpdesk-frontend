@@ -5,9 +5,9 @@
 }
 
 h1 {
-  margin: 1.5rem auto 0px auto;
+  margin: 1rem auto 0px auto;
   border-radius: 2rem;
-  padding: 0.6rem 10%;
+  padding: 0.3rem 5%;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     300deg,
@@ -22,4 +22,5 @@ h1 {
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: 1.5rem;
 }

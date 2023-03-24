@@ -13,7 +13,7 @@
 
     <mat-form-field appearance="outline" class="full-width white">
       <mat-label class="white">Senha</mat-label>
-      <input [formControl]="senha" required [(ngModel)]="creds.senha" name="senha" matInput [type]="hide ? 'password' : 'text'">
+      <input (keyup.enter)="logar()" [formControl]="senha" required [(ngModel)]="creds.senha" name="senha" matInput [type]="hide ? 'password' : 'text'">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
         <mat-icon class="icon-visi">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
