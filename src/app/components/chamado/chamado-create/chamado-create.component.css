@@ -123,3 +123,21 @@ img {
   min-height: 6rem;
   max-height: 12rem;
 }
+
+::ng-deep .mat-select-panel::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+}

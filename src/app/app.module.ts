@@ -30,6 +30,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
 import { MatDialogModule } from "@angular/material/dialog";
+import { ScrollingModule } from "@angular/cdk/scrolling";
 
 import { NavComponent } from "./components/nav/nav.component";
 import { HomeComponent } from "./components/home/home.component";
@@ -43,8 +44,8 @@ import { TecnicCreateComponent } from "./components/tecnico/tecnic-create/tecnic
 import { NgxMaskModule } from "ngx-mask";
 import { TecnicoUpdateComponent } from "./components/tecnico/tecnico-update/tecnico-update.component";
 import { TecnicoDeleteComponent } from "./components/tecnico/tecnico-delete/tecnico-delete.component";
-import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
-import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
+import { ChamadoListComponent } from "./components/chamado/chamado-list/chamado-list.component";
+import { ChamadoCreateComponent } from "./components/chamado/chamado-create/chamado-create.component";
 
 @NgModule({
   declarations: [
@@ -95,6 +96,7 @@ import { ChamadoCreateComponent } from './components/chamado/chamado-create/cham
     }),
     NgxMaskModule.forRoot(),
     MatDialogModule,
+    ScrollingModule,
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent],
