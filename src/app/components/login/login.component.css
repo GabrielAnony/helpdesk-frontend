@@ -59,6 +59,10 @@ input::placeholder {
   align-items: center;
 }
 
+.email {
+  margin-right: 10px;
+}
+
 .white {
   color: #fff;
   font-size: 1.2rem;
